@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- 
+    Oyagbile Oluwaseun: oyagbileoluwaseun@gmail.com
+    TaskName: To-Do List
+    TaskAttributes: Organise and Prioritize Task (Filter Search)
+    TaskFuntions: Drag and Drop Functionality 
+-->
+<html>
+
+
+<head>
+    <meta charset="utf-8"> <!-- Character encoding in UT-8 -->
+    <title>Oyagbile To-Do List</title> <!--My Browser Title-->
+    <link href="style.css" rel="stylesheet" type="text/css"> <!--Styling file link for my HTML file-->
+    <script src="script.js" defer></script> <!--Script Javascript file link for my HTML file-->
+</head>
+
+
+<body>
+    <h2>To-Do Task List Organiser and Management</h2>
+    
+    <!--Search/Filter Section of the To-Do-->
+	<div class="filter-search">
+		<form>
+			<input type="text" id="filter" class="filter" placeholder=" Enter Keyword Here ......" />
+			<button class="search">Filter To-Dos</button>
+		</form>
+    </div>
+    
+    <!--To-Dos Sections Task, Working and Completed-->
+	<div class="To-Dos-container">
+
+		<div class="box sec tasks">
+			<div class="box-sub">
+				<form id="taskSec">
+					<input type="text" class="task input" />
+					<button class="add">Add New Task</button>
+				</form>
+			</div>
+			<div class="tasks" id="lists">
+			</div>
+        </div>
+        
+		<div class="box working">
+			<div class="box-sub">Working / Review</div>
+			<div id="working" class="tasks">
+			</div>
+        </div>
+        
+		<div class="box completed">
+			<div class="box-sub">Completed Todos</div>
+			<div id="completedTodos" class="tasks">
+			</div>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
